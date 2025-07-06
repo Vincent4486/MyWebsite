@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/assets/icons/WebIcon.png">
+  <title>Welcome to my website | English</title>
+  <style>
+    /* Center the language chooser at the top */
+    .language-chooser {
+        position: absolute;
+        top: 5px; /* Adjusts the vertical position */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0; /* Vertical padding for spacing */
+        background-color: rgb(0, 0, 233, 0.253);
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .end_section{
+        background-color: rgb(0, 0, 233, 0.253); /* Blue */
+        color:white;
+        padding: 40px;
+        border-radius: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        position:sticky;
+        text-align: center;
+    }
+    h1 {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 4cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+    }
+    a:hover{
+        display: block;
+        font-size: 1.2cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 0cm;
+        text-align: center;
+        text-decoration: underline;
+    }
+    a:link{
+        display: block;
+        font-size: 1.2cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 0cm;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:visited{
+        display: block;
+        font-size: 1.2cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 0cm;
+        text-align: center;
+        text-decoration: underline;
+        color:rgb(0, 0, 233)
+    }
+    p.click_for{
+        font-size: 0.8cm;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 0px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Language Chooser Section -->
+  <div class="language-chooser">
+        <label for="language-select">Choose your language:</label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en-us">English</option>
+            <option value="zh-cn">中文</option>
+            <option value="ja-jp">日本語</option>
+        </select>
+  </div>
+
+  <script>
+        function changeLanguage() {
+            var selectedLang = document.getElementById("language-select").value;
+            localStorage.setItem("preferredLanguage", selectedLang);
+            window.location.href = "/" + selectedLang + "/index.html";
+        }
+
+    // On page load, set the dropdown based on stored language
+    window.onload = function () {
+        var preferredLang = localStorage.getItem("preferredLanguage");
+            if (preferredLang) {
+                document.getElementById("language-select").value = preferredLang;
+            }
+    };
+    </script>
+    <br>
+    <h1>Hello,</h1>
+    <p style="margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 1.7cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;">I am Vincent Yang,</p>
+    <p style="margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 0.5cm;
+        font-style: italic;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 300">or VINCENT4486</p>
+    <br>
+    <p style="margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.7cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;">this is a website about myself.</p>
+    <br><br><br>
+    <p style="
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.4cm;
+        font-style: normal;
+        font-family:'Times New Roman', Times, serif;
+        font-style:italic">Contents:</p>
+
+    <p class="click_for">Click below for:</p>
+    <a href="/en-us/about_me.html">About me</a>
+
+    <p class="click_for">Click below for:</p>
+    <a href="/en-us/contents_I_made.html">Contents I made</a>
+
+    <p class="click_for">Click below for:</p>
+    <a href="/en-us/my_minecraft_server.html">My Minecraft Server</a>
+
+    <br>
+
+    <div class="end_section">
+        <p>ha<br></p>
+    </div>
+</body>
+</html>

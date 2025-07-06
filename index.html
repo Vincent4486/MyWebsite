@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Redirect</title>
+  <script>
+    (function() {
+      // Grab the first two letters of the browser’s primary language
+      var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
+
+      // Map language codes to their landing pages
+      var map = {
+        zh: '/zh-cn/index.html',
+        en: '/en-us/index.html',
+        ja: '/ja-jp/index.html'
+      };
+
+      // Redirect to mapped URL or fall back to English
+      window.location.replace(map[lang] || map.en);
+    })();
+  </script>
+</head>
+<body>
+  <p>Detecting language… If you are not redirected, <a id="fallback" href="/en-us/index.html">click here</a>.</p>
+  <script>
+    // Update fallback link to match detected language
+    var a = document.getElementById('fallback');
+    var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
+    a.href = {
+      zh: '/zh-cn/index.html',
+      ja: '/ja-jp/index.html',
+      en: '/en-us/index.html'
+    }[lang] || '/en-us/index.html';
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ようこそ - 日本語</title>
+    <style>
+    /* ページ上部中央に言語選択セクションを配置 */
+    .language-chooser {
+        position: absolute;
+        top: 5px; /* 上から20pxの位置 */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    h1 {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2.5cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    </style>
+</head>
+<body>
+  <!-- 言語選択セクション -->
+  <div class="language-chooser">
+        <label for="language-select">言語を選択してください:</label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="ja-jp">日本語</option>
+            <option value="en-us">English</option>
+            <option value="zh-cn">中文</option>
+        </select>
+  </div>
+
+  <script>
+        function changeLanguage() {
+            var selectedLang = document.getElementById("language-select").value;
+            localStorage.setItem("preferredLanguage", selectedLang);
+            window.location.href = "/" + selectedLang + "/index.html";
+        }
+
+    // ページ読み込み時に保存された言語をドロップダウンに反映
+    window.onload = function () {
+        var preferredLang = localStorage.getItem("preferredLanguage");
+        if (preferredLang) {
+            document.getElementById("language-select").value = preferredLang;
+        }
+    };
+    </script>
+    <h1>こんにちは、</h1>
+</body>
+</html>

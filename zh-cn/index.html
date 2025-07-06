@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎 - 中文</title>
+    <style>
+    /* Center the language chooser at the top */
+    .language-chooser {
+        position: absolute;
+        top: 5px; /* Adjusts the vertical position */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    h1 {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2.7cm;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Language Chooser Section -->
+    <div class="language-chooser">
+        <label for="language-select">选择您的语言:</label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="zh-cn">中文</option>
+            <option value="en-us">English</option>
+            <option value="ja-jp">日本語</option>
+        </select>
+    </div>
+
+    <script>
+        function changeLanguage() {
+            var selectedLang = document.getElementById("language-select").value;
+            localStorage.setItem('preferredLanguage', selectedLang);
+            window.location.href = '/' + selectedLang + '/index.html';
+        }
+
+        // On page load, set the dropdown based on stored language
+        window.onload = function() {
+            var preferredLang = localStorage.getItem('preferredLanguage');
+            if (preferredLang) {
+                document.getElementById("language-select").value = preferredLang;
+            }
+        };
+    </script>
+    <h1>你好，</h1>
+</body>
+</html>
