@@ -10,9 +10,9 @@
 
       // Map language codes to their landing pages
       var map = {
-        zh: '/zh-cn/index.html',
-        en: '/en-us/index.html',
-        ja: '/ja-jp/index.html'
+        zh: '/zh-cn/start.html',
+        en: '/en-us/start.html',
+        ja: '/ja-jp/start.html'
       };
 
       // Redirect to mapped URL or fall back to English
@@ -21,16 +21,16 @@
   </script>
 </head>
 <body>
-  <p>Detecting language… If you are not redirected, <a id="fallback" href="/en-us/index.html">click here</a>.</p>
+  <p>Detecting language… If you are not redirected, <a id="fallback" href="/en-us/start.html">click here</a>.</p>
   <script>
     // Update fallback link to match detected language
     var a = document.getElementById('fallback');
     var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
     a.href = {
-      zh: '/zh-cn/index.html',
-      ja: '/ja-jp/index.html',
-      en: '/en-us/index.html'
-    }[lang] || '/en-us/index.html';
+      zh: '/zh-cn/start.html',
+      ja: '/ja-jp/start.html',
+      en: '/en-us/start.html'
+    }[lang] || '/en-us/start.html';
   </script>
 </body>
 </html>
