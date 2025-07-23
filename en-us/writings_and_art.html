@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/assets/icons/WebIcon.png">
+        <link rel="stylesheet" href="/en-us/style.css">
+    </head>
+    <body>
+        <div class="language-chooser">
+            <label for="language-select">Choose your language:</label>
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="en-us">English</option>
+                <option value="zh-cn">中文</option>
+                <option value="ja-jp">日本語</option>
+            </select>
+        </div>
+        <script>
+            function changeLanguage() {
+                var selectedLang = document.getElementById("language-select").value;
+                localStorage.setItem("preferredLanguage", selectedLang);
+                window.location.href = "/" + selectedLang + "/about_me.html";
+            }
+
+            // On page load, set the dropdown based on stored language
+            window.onload = function () {
+                var preferredLang = localStorage.getItem("preferredLanguage");
+                    if (preferredLang) {
+                        document.getElementById("language-select").value = preferredLang;
+                    }
+            };
+        </script>
+        <br>
+        <br>
+        <a class="go_back" href="/en-us/start.html">&lt Go back</a>
+
+        <h1>My Writings <br>and Art</h1>
+    </body>
+</html>
