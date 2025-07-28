@@ -63,3 +63,13 @@ a:visited.go_back{
     color:rgb(0, 0, 233);
     text-align: center;
 }
+p.about_me{
+    display: block;
+    font-size: 1cm;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0cm;
+    text-align: left;
+    margin-left: 30px;
+    text-decoration: none;
+}
