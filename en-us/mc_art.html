@@ -6,24 +6,6 @@
         <link rel="icon" type="image/png" href="/assets/icons/WebIcon.png">
         <link rel="stylesheet" href="/en-us/style.css">
         <title>My Minecraft arts | English</title>
-        <style>
-            img{
-                width: 33%;
-                height: auto;
-            }
-            p.art_title {
-                font-size: 1cm;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: left;
-                margin-left: 30px;
-            }
-            p.art_info {
-                font-size: 0.8cm;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: left;
-                margin-left: 30px;
-            }
-        </style>
     </head>
     <body>
         <div class="language-chooser">
@@ -39,7 +21,7 @@
             function changeLanguage() {
                 var selectedLang = document.getElementById("language-select").value;
                 localStorage.setItem("preferredLanguage", selectedLang);
-                window.location.href = "/" + selectedLang + "/start.html";
+                window.location.href = "/" + selectedLang + "/index.html";
             }
 
             // On page load, set the dropdown based on stored language
@@ -52,7 +34,7 @@
         </script>
 
         <br>
-        <a class="go_back" href="/en-us/start.html">&lt Go back</a>
+        <a class="go_back" href="/en-us/index.html">&lt Go back</a>
 
         <h1>My Minecraft <br>Arts</h1>
 
@@ -84,5 +66,9 @@
         <div class="end_section">
             <p>Wemmbu and Parrot UNSTABLE SMP!!!!!<br></p>
         </div>
+
+        <footer>
+            <p>&copy; 2026 Vincent Yang. All rights reserved.</p>
+        </footer>
     </body>
 </html>

@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
-    --main-font: 'Noto Serif', serif;
+    --main-font: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .language-chooser {
     position: absolute;
-    top: 5px; /* Adjusts the vertical position */
+    top: 0px; /* Adjusts the vertical position */
     left: 0;
     width: 100%;
     text-align: center;
@@ -18,24 +21,34 @@
 .end_section{
     background-color: rgb(0, 0, 233, 0.253); /* Blue */
     color:white;
-    padding: 40px;
+    padding: 10px;
     border-radius: 0px;
     font-family: var(--main-font);
     font-size: 24px;
     position:sticky;
     text-align: center;
+    margin-top: 50px;
+}
+.copyright {
+    display: block; /* Makes the top margin work */
+    font-size: 18px;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 20px;
+    text-align: center;
 }
 h1 {
-    margin-left: 30px;
+    margin-left: 100px;
     margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 4cm;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 151px;
     font-style: normal;
     font-family: var(--main-font);
     font-weight: 100;
 }
 p.click_for{
-    font-size: 0.8cm;
+    font-size: 30px;
     font-style: italic;
     font-family: var(--main-font);
     margin-bottom: 0px;
@@ -47,7 +60,7 @@ a:hover.go_back{
     font-size: 20px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
 }
 a:link.go_back{
@@ -55,78 +68,79 @@ a:link.go_back{
     font-size: 20px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: none;
     text-align: center;
+    color: black;
 }
 a:visited.go_back{
     display: block;
     font-size: 20px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
     color:rgb(0, 0, 233);
     text-align: center;
 }
 p.about_me{
     display: block;
-    font-size: 1cm;
+    font-size: 38px;
     font-style: italic;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-align: left;
     margin-left: 30px;
     text-decoration: none;
 }
 
 /* CSS moved from index.html */
-img{
+img.icon {
     width: 40px;
     height: auto;
 }
 a:hover{
     display: block;
-    font-size: 1.2cm;
+    font-size: 45px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-align: center;
     text-decoration: underline;
 }
 a:link{
     display: block;
-    font-size: 1.2cm;
+    font-size: 45px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-align: center;
     text-decoration: none;
 }
 a:visited{
     display: block;
-    font-size: 1.2cm;
+    font-size: 45px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-align: center;
     text-decoration: underline;
     color:rgb(0, 0, 233)
 }
 
 /* CSS moved from mc_art.html */
-img{
+img {
     width: 33%;
     height: auto;
 }
 p.art_title {
-    font-size: 1cm;
+    font-size: 38px;
     font-family: var(--main-font);
     text-align: left;
     margin-left: 30px;
 }
 p.art_info {
-    font-size: 0.8cm;
+    font-size: 30px;
     font-family: var(--main-font);
     text-align: left;
     margin-left: 30px;
@@ -136,69 +150,74 @@ p.art_info {
 a:hover.web{
     display: inline;
     display: block;
-    font-size: 1cm;
+    font-size: 38px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
     text-align: center;
 }
 a:link.web{
     display: inline;
     display: block;
-    font-size: 1cm;
+    font-size: 38px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
     text-align: center;
+    color: black;
 }
 a:visited.web{
     display: inline;
     display: block;
-    font-size: 1cm;
+    font-size: 38px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
     text-align: center;
 }
 p.mail{
     display: inline;
     display: block;
-    font-size: 1cm;
+    font-size: 38px;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0cm;
+    margin-top: 0px;
     text-decoration: underline;
     text-align: center;
+    color: green;
 }
 
 /* Additional utility classes for inline styles */
 .intro-title {
-    margin-left: 30px;
+    margin-left: 100px;
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 0px;
-    font-size: 1.7cm;
+    font-size: 64px;
     font-style: normal;
     font-family: var(--main-font);
 }
 
 .intro-subtitle {
-    margin-left: 30px;
+    margin-left: 100px;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 0.5cm;
+    font-size: 19px;
     font-style: italic;
     font-family: var(--main-font);
     font-weight: 300;
 }
 
 .intro-description {
-    margin-left: 30px;
+    margin-left: 100px;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-size: 1.7cm;
+    font-size: 45px;
     font-style: normal;
     font-family: var(--main-font);
 }
@@ -207,13 +226,18 @@ p.mail{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;
-    font-size: 1.4cm;
+    font-size: 53px;
     font-style: italic;
     font-family: var(--main-font);
 }
 
+.about-me-centered {
+    text-align: center;
+    margin-left: 0px;
+}
+
 .about-me-small {
-    font-size: 0.6cm;
+    font-size: 23px;
 }
 
 .web-link-github {
@@ -232,7 +256,6 @@ p.mail{
     color: rgba(0, 130, 0, 0.729);
 }
 
-.about-me-centered {
-    text-align: center;
-    margin-left: 0px;
+.web-link-default {
+    color: black;
 }
