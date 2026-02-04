@@ -1,7 +1,7 @@
 function changeLanguage() {
     var selectedLang = document.getElementById("language-select").value;
     localStorage.setItem("preferredLanguage", selectedLang);
-    window.location.href = "/" + selectedLang + "/start.html";
+    window.location.href = "/" + selectedLang + "/index.html";
 }
 
 // On page load, set the dropdown based on stored language

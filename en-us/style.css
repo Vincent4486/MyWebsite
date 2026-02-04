@@ -1,5 +1,6 @@
 :root {
     --main-font: 'Times New Roman', Times, serif;
+    --secondary-font: monospace;
 }
 
 body {
@@ -17,6 +18,35 @@ body {
     background-color: rgb(0, 0, 233, 0.253);
     color: white;
     font-family: var(--main-font);
+    font-size: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5%;
+}
+
+.nav-separator {
+    color: white;
+    font-size: 100%;
+}
+
+a.nav-link {
+    display: inline !important;
+    font-size: 100% !important;
+    font-style: normal;
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+}
+
+a.nav-link:visited {
+    color: white;
 }
 .end_section{
     background-color: rgb(0, 0, 233, 0.253); /* Blue */
@@ -24,14 +54,14 @@ body {
     padding: 2%;
     border-radius: 0px;
     font-family: var(--main-font);
-    font-size: 150%;
+    font-size: 170%;
     position:sticky;
     text-align: center;
     margin-top: 5%;
 }
 .copyright {
     display: block; /* Makes the top margin work */
-    font-size: 113%;
+    font-size: 80%;
     font-style: normal;
     font-family: var(--main-font);
     margin-top: 2%;
@@ -39,7 +69,7 @@ body {
 }
 h1 {
     margin-left: 8%;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 1.5%;
     text-align: left;
     font-size: 900%;
@@ -83,14 +113,15 @@ a:visited.go_back{
     color:rgb(0, 0, 233);
     text-align: center;
 }
-p.about_me{
+p.main_text{
     display: block;
     font-size: 238%;
     font-style: italic;
     font-family: var(--main-font);
     margin-top: 0;
     text-align: left;
-    margin-left: 3%;
+    margin-left: 8%;
+    margin-right: 5%;
     text-decoration: none;
 }
 
@@ -125,7 +156,6 @@ a:visited{
     margin-top: 0;
     text-align: center;
     text-decoration: underline;
-    color:rgb(0, 0, 233)
 }
 
 /* CSS moved from mc_art.html */
@@ -166,7 +196,6 @@ a:link.web{
     margin-top: 0;
     text-decoration: underline;
     text-align: center;
-    color: black;
 }
 a:visited.web{
     display: inline;
@@ -236,8 +265,11 @@ p.mail{
     margin-left: 0px;
 }
 
-.about-me-small {
+.main_text_small {
     font-size: 144%;
+    font-style: italic;
+    margin-left: 8%;
+    margin-right: 5%;
 }
 
 .web-link-github {
@@ -252,10 +284,71 @@ p.mail{
     color: rgba(19, 132, 230, 0.729);
 }
 
-.mail-email {
-    color: rgba(0, 130, 0, 0.729);
+.web-link-default {
+    color: rgba(0, 0, 0, 0.729);
 }
 
-.web-link-default {
-    color: black;
+div.coding-project-element {
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+p.coding-project-title {
+    font-size: 238%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-bottom: 1%;
+}
+
+p.coding-project-description {
+    font-size: 188%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+a.coding-project-link {
+    font-size: 150%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 1%;
+    text-decoration: underline;
+    text-align: left;
+    color: rgb(55, 0, 255);
+}
+
+a.coding-project-link:visited {
+    font-size: 150%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 1%;
+    text-decoration: underline;
+    text-align: left;
+    color: rgb(22, 16, 108);
+}
+
+label.coding-project-state-done {
+    font-size: 150%;
+    font-style: normal;
+    font-family: var(--secondary-font);
+    margin-left: 0%;
+    color: rgb(0, 0, 128);
+}
+
+label.coding-project-state-developing {
+    font-size: 150%;
+    font-style: normal;
+    font-family: var(--secondary-font);
+    margin-left: 0%;
+    color: rgb(0, 128, 0);
+}
+
+label.coding-project-state-deprecated {
+    font-size: 150%;
+    font-style: normal;
+    font-family: var(--secondary-font);
+    margin-left: 0%;
+    color: rgb(128, 0, 0);
 }
