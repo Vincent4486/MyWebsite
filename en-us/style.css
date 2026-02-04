@@ -337,7 +337,7 @@ label.coding-project-state-done {
     color: rgb(0, 0, 128);
 }
 
-label.coding-project-state-developing {
+label.coding-project-state-active {
     font-size: 150%;
     font-style: normal;
     font-family: var(--secondary-font);
