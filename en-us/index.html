@@ -18,21 +18,7 @@
         </select>
   </div>
 
-  <script>
-        function changeLanguage() {
-            var selectedLang = document.getElementById("language-select").value;
-            localStorage.setItem("preferredLanguage", selectedLang);
-            window.location.href = "/" + selectedLang + "/start.html";
-        }
-
-    // On page load, set the dropdown based on stored language
-        window.onload = function () {
-            var preferredLang = localStorage.getItem("preferredLanguage");
-                if (preferredLang) {
-                    document.getElementById("language-select").value = preferredLang;
-                }       
-        };
-    </script>
+  <script src="/en-us/script.js"></script>
     <br>
     <h1>Hello,</h1>
     <p class="intro-title">I am Vincent Yang,</p>
