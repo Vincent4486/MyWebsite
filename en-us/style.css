@@ -13,7 +13,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 5px 0; /* Vertical padding for spacing */
+    padding: 1% 0; /* Vertical padding for spacing */
     background-color: rgb(0, 0, 233, 0.253);
     color: white;
     font-family: var(--main-font);
@@ -21,34 +21,34 @@ body {
 .end_section{
     background-color: rgb(0, 0, 233, 0.253); /* Blue */
     color:white;
-    padding: 10px;
+    padding: 2%;
     border-radius: 0px;
     font-family: var(--main-font);
-    font-size: 24px;
+    font-size: 150%;
     position:sticky;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 .copyright {
     display: block; /* Makes the top margin work */
-    font-size: 18px;
+    font-size: 113%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 20px;
+    margin-top: 2%;
     text-align: center;
 }
 h1 {
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
     text-align: left;
-    font-size: 151px;
+    font-size: 900%;
     font-style: normal;
     font-family: var(--main-font);
     font-weight: 100;
 }
 p.click_for{
-    font-size: 30px;
+    font-size: 188%;
     font-style: italic;
     font-family: var(--main-font);
     margin-bottom: 0px;
@@ -57,72 +57,72 @@ p.click_for{
 }
 a:hover.go_back{
     display: block;
-    font-size: 20px;
+    font-size: 125%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
 }
 a:link.go_back{
     display: block;
-    font-size: 20px;
+    font-size: 125%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: none;
     text-align: center;
     color: black;
 }
 a:visited.go_back{
     display: block;
-    font-size: 20px;
+    font-size: 125%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
     color:rgb(0, 0, 233);
     text-align: center;
 }
 p.about_me{
     display: block;
-    font-size: 38px;
+    font-size: 238%;
     font-style: italic;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 3%;
     text-decoration: none;
 }
 
 /* CSS moved from index.html */
 img.icon {
-    width: 40px;
+    width: 3%;
     height: auto;
 }
 a:hover{
     display: block;
-    font-size: 45px;
+    font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     text-decoration: underline;
 }
 a:link{
     display: block;
-    font-size: 45px;
+    font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     text-decoration: none;
 }
 a:visited{
     display: block;
-    font-size: 45px;
+    font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
     text-decoration: underline;
     color:rgb(0, 0, 233)
@@ -134,36 +134,36 @@ img {
     height: auto;
 }
 p.art_title {
-    font-size: 38px;
+    font-size: 238%;
     font-family: var(--main-font);
     text-align: left;
-    margin-left: 30px;
+    margin-left: 3%;
 }
 p.art_info {
-    font-size: 30px;
+    font-size: 188%;
     font-family: var(--main-font);
     text-align: left;
-    margin-left: 30px;
+    margin-left: 3%;
 }
 
 /* CSS moved from about.html */
 a:hover.web{
     display: inline;
     display: block;
-    font-size: 38px;
+    font-size: 238%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
     text-align: center;
 }
 a:link.web{
     display: inline;
     display: block;
-    font-size: 38px;
+    font-size: 238%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
     text-align: center;
     color: black;
@@ -171,20 +171,20 @@ a:link.web{
 a:visited.web{
     display: inline;
     display: block;
-    font-size: 38px;
+    font-size: 238%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
     text-align: center;
 }
 p.mail{
     display: inline;
     display: block;
-    font-size: 38px;
+    font-size: 238%;
     font-style: normal;
     font-family: var(--main-font);
-    margin-top: 0px;
+    margin-top: 0;
     text-decoration: underline;
     text-align: center;
     color: green;
@@ -192,32 +192,32 @@ p.mail{
 
 /* Additional utility classes for inline styles */
 .intro-title {
-    margin-left: 100px;
+    margin-left: 8%;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 1.5%;
     margin-bottom: 0px;
-    font-size: 64px;
+    font-size: 400%;
     font-style: normal;
     font-family: var(--main-font);
 }
 
 .intro-subtitle {
-    margin-left: 100px;
+    margin-left: 8%;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 119%;
     font-style: italic;
     font-family: var(--main-font);
     font-weight: 300;
 }
 
 .intro-description {
-    margin-left: 100px;
+    margin-left: 8%;
     text-align: left;
     margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 45px;
+    margin-bottom: 1%;
+    font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
 }
@@ -225,8 +225,8 @@ p.mail{
 .contents-heading {
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 53px;
+    margin-bottom: 1%;
+    font-size: 331%;
     font-style: italic;
     font-family: var(--main-font);
 }
@@ -237,7 +237,7 @@ p.mail{
 }
 
 .about-me-small {
-    font-size: 23px;
+    font-size: 144%;
 }
 
 .web-link-github {
