@@ -81,7 +81,7 @@ p.about_me{
 }
 
 /* CSS moved from index.html */
-img{
+img.icon{
     width: 40px;
     height: auto;
 }
@@ -115,7 +115,7 @@ a:visited{
 }
 
 /* CSS moved from mc_art.html */
-img{
+img.mc-art{
     width: 33%;
     height: auto;
 }
