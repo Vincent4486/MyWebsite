@@ -1,0 +1,54 @@
+/* CSS moved from about.html */
+a:hover.web{
+    display: inline;
+    display: block;
+    font-size: 238%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+a:link.web{
+    display: inline;
+    display: block;
+    font-size: 238%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+a:visited.web{
+    display: inline;
+    display: block;
+    font-size: 238%;
+    font-style: normal;
+    font-family: var(--main-font);
+    margin-top: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.main-text-small {
+    font-size: 144%;
+    font-style: italic;
+    margin-left: 8%;
+    margin-right: 5%;
+}
+
+.web-link-github {
+    color: rgba(0, 0, 0, 0.729);
+}
+
+.web-link-youtube {
+    color: rgba(241, 22, 22, 0.729);
+}
+
+.web-link-jetphotos {
+    color: rgba(19, 132, 230, 0.729);
+}
+
+.web-link-default {
+    color: rgba(0, 0, 0, 0.729);
+}
