@@ -41,6 +41,10 @@ a.nav-link {
     white-space: nowrap;
 }
 
+a.nav-link:link {
+    color: white;
+}
+
 a.nav-link:hover {
     text-decoration: underline;
 }
@@ -113,7 +117,7 @@ a:visited.go_back{
     color:rgb(0, 0, 233);
     text-align: center;
 }
-p.main_text{
+p.main-text{
     display: block;
     font-size: 238%;
     font-style: italic;
@@ -125,230 +129,9 @@ p.main_text{
     text-decoration: none;
 }
 
-/* CSS moved from index.html */
-img.icon {
-    width: 3%;
-    height: auto;
-}
-a:hover{
-    display: block;
-    font-size: 281%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-align: center;
-    text-decoration: underline;
-}
-a:link{
-    display: block;
-    font-size: 281%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-align: center;
-    text-decoration: none;
-}
-a:visited{
-    display: block;
-    font-size: 281%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-align: center;
-    text-decoration: underline;
-}
-
-/* CSS moved from mc_art.html */
-img {
-    width: 33%;
-    height: auto;
-}
-p.art_title {
-    font-size: 238%;
-    font-family: var(--main-font);
-    text-align: left;
-    margin-left: 3%;
-}
-p.art_info {
-    font-size: 188%;
-    font-family: var(--main-font);
-    text-align: left;
-    margin-left: 3%;
-}
-
-/* CSS moved from about.html */
-a:hover.web{
-    display: inline;
-    display: block;
-    font-size: 238%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-decoration: underline;
-    text-align: center;
-}
-a:link.web{
-    display: inline;
-    display: block;
-    font-size: 238%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-decoration: underline;
-    text-align: center;
-}
-a:visited.web{
-    display: inline;
-    display: block;
-    font-size: 238%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-decoration: underline;
-    text-align: center;
-}
-p.mail{
-    display: inline;
-    display: block;
-    font-size: 238%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 0;
-    text-decoration: underline;
-    text-align: center;
-    color: green;
-}
-
-/* Additional utility classes for inline styles */
-.intro-title {
-    margin-left: 8%;
-    text-align: left;
-    margin-top: 1.5%;
-    margin-bottom: 0px;
-    font-size: 400%;
-    font-style: normal;
-    font-family: var(--main-font);
-}
-
-.intro-subtitle {
-    margin-left: 8%;
-    text-align: left;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 119%;
-    font-style: italic;
-    font-family: var(--main-font);
-    font-weight: 300;
-}
-
-.intro-description {
-    margin-left: 8%;
-    text-align: left;
-    margin-top: 0px;
-    margin-bottom: 1%;
-    font-size: 281%;
-    font-style: normal;
-    font-family: var(--main-font);
-}
-
-.contents-heading {
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 1%;
-    font-size: 331%;
-    font-style: italic;
-    font-family: var(--main-font);
-}
-
-.about-me-centered {
-    text-align: center;
-    margin-left: 0px;
-}
-
-.main_text_small {
+.main-text-small {
     font-size: 144%;
     font-style: italic;
     margin-left: 8%;
     margin-right: 5%;
-}
-
-.web-link-github {
-    color: rgba(0, 0, 0, 0.729);
-}
-
-.web-link-youtube {
-    color: rgba(241, 22, 22, 0.729);
-}
-
-.web-link-jetphotos {
-    color: rgba(19, 132, 230, 0.729);
-}
-
-.web-link-default {
-    color: rgba(0, 0, 0, 0.729);
-}
-
-div.coding-project-element {
-    margin-left: 8%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-}
-
-p.coding-project-title {
-    font-size: 238%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-bottom: 1%;
-}
-
-p.coding-project-description {
-    font-size: 188%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 1%;
-    margin-bottom: 0%;
-}
-
-a.coding-project-link {
-    font-size: 150%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 1%;
-    text-decoration: underline;
-    text-align: left;
-    color: rgb(55, 0, 255);
-}
-
-a.coding-project-link:visited {
-    font-size: 150%;
-    font-style: normal;
-    font-family: var(--main-font);
-    margin-top: 1%;
-    text-decoration: underline;
-    text-align: left;
-    color: rgb(22, 16, 108);
-}
-
-label.coding-project-state-done {
-    font-size: 150%;
-    font-style: normal;
-    font-family: var(--secondary-font);
-    margin-left: 0%;
-    color: rgb(0, 0, 128);
-}
-
-label.coding-project-state-active {
-    font-size: 150%;
-    font-style: normal;
-    font-family: var(--secondary-font);
-    margin-left: 0%;
-    color: rgb(0, 128, 0);
-}
-
-label.coding-project-state-deprecated {
-    font-size: 150%;
-    font-style: normal;
-    font-family: var(--secondary-font);
-    margin-left: 0%;
-    color: rgb(128, 0, 0);
 }
