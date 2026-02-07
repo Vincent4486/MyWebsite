@@ -17,12 +17,30 @@
                 <option value="ja-jp">日本語</option>
             </select>
             <span class="nav-separator">|</span>
-            <a href="/en-us/index.html" class="nav-link">Home</a>
-            <a href="/en-us/about.html" class="nav-link">About</a>
+            <div class="dropdown">
+                <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    Home
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <a href="/en-us/index.html" class="dropdown-item" role="menuitem">Welcome</a>
+                    <a href="/en-us/index.html#contents" class="dropdown-item" role="menuitem">Contents</a>
+                    <a href="/en-us/index.html#news" class="dropdown-item" role="menuitem">News</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                    About
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <a href="/en-us/about.html" class="dropdown-item" role="menuitem">About me</a>
+                    <a href="/en-us/coding.html" class="dropdown-item" role="menuitem">Coding</a>
+                    <a href="/en-us/mc_art.html" class="dropdown-item" role="menuitem">Minecraft Arts</a>
+                </div>
+            </div>
             <a href="/en-us/contact.html" class="nav-link">Contact</a>
-            <a href="https://blog.vincentyang.org" class="nav-link">Blog</a>
-            <a href="https://music.vincentyang.org" class="nav-link">Music</a>
-            <a href="https://support.vincentyang.org" class="nav-link">Support</a>
+            <a href="https://blog.vyang.org" class="nav-link">Blog</a>
+            <a href="https://music.vyang.org" class="nav-link">Music</a>
+            <a href="https://support.vyang.org" class="nav-link">Support</a>
         </div>
 
         <script src="/en-us/script/script.js"></script>

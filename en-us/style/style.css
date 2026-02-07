@@ -8,13 +8,14 @@ body {
     padding: 0;
 }
 
+/* --- Top language/navigation bar --- */
 .language-chooser {
     position: absolute;
-    top: 0px; /* Adjusts the vertical position */
+    top: 0px;
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 1% 0; /* Vertical padding for spacing */
+    padding: 1% 0;
     background-color: rgb(0, 0, 233, 0.253);
     color: white;
     font-family: var(--main-font);
@@ -31,9 +32,34 @@ body {
     font-size: 100%;
 }
 
+/* Keep nav text compact and override global anchors */
+.language-chooser a,
+.language-chooser .dropdown-toggle,
+.language-chooser .dropdown-item {
+    font-size: 90% !important;
+    line-height: 1.2;
+    font-family: var(--main-font);
+}
+
+.language-chooser a:link,
+.language-chooser a:visited {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.language-chooser a:hover {
+    text-decoration: underline;
+}
+
+.language-chooser .dropdown-menu .dropdown-item {
+    color: rgb(0, 0, 233, 0.253) !important;
+    display: block;
+}
+
 a.nav-link {
     display: inline !important;
-    font-size: 100% !important;
+    font-size: 90% !important;
     font-style: normal;
     font-family: var(--main-font);
     text-decoration: none;
@@ -41,36 +67,98 @@ a.nav-link {
     white-space: nowrap;
 }
 
-a.nav-link:link {
-    color: white;
+a.nav-link:link { color: white; }
+a.nav-link:hover { text-decoration: underline; }
+a.nav-link:visited { color: white; }
+
+/* --- Dropdown --- */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
 }
 
-a.nav-link:hover {
+.dropdown-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: 90%;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.dropdown-toggle:hover { text-decoration: underline; }
+
+.dropdown-toggle:focus {
+    outline: 1px dashed rgba(255, 255, 255, 0.6);
+    outline-offset: 2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    padding: 4px 0;
+    min-width: 8rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 6px 12px;
+    font-family: var(--main-font);
+    font-size: 90%;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(0, 0, 0, 0.05);
     text-decoration: underline;
 }
 
-a.nav-link:visited {
-    color: white;
-}
+/* --- Footer/end section --- */
 .end_section{
-    background-color: rgb(0, 0, 233, 0.253); /* Blue */
-    color:white;
+    background-color: rgb(0, 0, 233, 0.253);
+    color: white;
     padding: 2%;
-    border-radius: 0px;
+    border-radius: 0;
     font-family: var(--main-font);
     font-size: 170%;
-    position:sticky;
+    position: sticky;
     text-align: center;
     margin-top: 5%;
 }
+
 .copyright {
-    display: block; /* Makes the top margin work */
+    display: block;
     font-size: 80%;
     font-style: normal;
     font-family: var(--main-font);
     margin-top: 2%;
     text-align: center;
 }
+
+/* --- Page content typography --- */
 h1 {
     margin-left: 8%;
     margin-top: 5%;
@@ -81,14 +169,16 @@ h1 {
     font-family: var(--main-font);
     font-weight: 100;
 }
+
 p.click_for{
     font-size: 188%;
     font-style: italic;
     font-family: var(--main-font);
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: center;
     color: rgb(0, 0, 0);
 }
+
 a:hover.go_back{
     display: block;
     font-size: 125%;
@@ -97,6 +187,7 @@ a:hover.go_back{
     margin-top: 0;
     text-decoration: underline;
 }
+
 a:link.go_back{
     display: block;
     font-size: 125%;
@@ -107,6 +198,7 @@ a:link.go_back{
     text-align: center;
     color: black;
 }
+
 a:visited.go_back{
     display: block;
     font-size: 125%;
@@ -114,9 +206,10 @@ a:visited.go_back{
     font-family: var(--main-font);
     margin-top: 0;
     text-decoration: underline;
-    color:rgb(0, 0, 233);
+    color: rgb(0, 0, 233);
     text-align: center;
 }
+
 p.main-text{
     display: block;
     font-size: 238%;

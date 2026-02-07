@@ -2,35 +2,34 @@ img.icon {
     width: 3%;
     height: auto;
 }
-a:hover{
-    display: block;
+a.link:hover{
     font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
     margin-top: 0;
-    text-align: center;
     text-decoration: underline;
     color: rgb(0, 0, 233, 0.253);
 }
-a:link{
-    display: block;
+a.link:link{
     font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
     margin-top: 0;
-    text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 233, 0.253);
 }
-a:visited{
-    display: block;
+a.link:visited{
     font-size: 281%;
     font-style: normal;
     font-family: var(--main-font);
     margin-top: 0;
-    text-align: center;
     text-decoration: underline;
     color: rgb(0, 0, 233, 0.253);
+}
+
+div.content-element {
+    display: block;
+    text-align: center;
 }
 
 /* Additional utility classes for inline styles */
