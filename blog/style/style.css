@@ -401,3 +401,11 @@ p.main-text{
     padding-top: 2%;
     border-top: 1px solid #ddd;
 }
+
+.buy-coffee {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1% 2%;
+    text-align: right;
+}
