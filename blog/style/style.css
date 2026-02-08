@@ -402,6 +402,18 @@ p.main-text{
     border-top: 1px solid #ddd;
 }
 
+.blog-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-actions .buy-coffee-link {
+    margin-left: auto;
+}
+
 .buy-coffee {
     position: absolute;
     top: 0;
