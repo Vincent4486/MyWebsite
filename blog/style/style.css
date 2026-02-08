@@ -404,20 +404,7 @@ p.main-text{
 
 .blog-actions {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
     margin-bottom: 20px;
-}
-
-.blog-actions .buy-coffee-link {
-    margin-left: auto;
-}
-
-.buy-coffee {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1% 2%;
-    text-align: right;
 }
