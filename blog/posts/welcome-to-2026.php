@@ -90,7 +90,7 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
         </div>
         
         <footer class="blog-footer">
-            <div>
+            <div class="blog-footer-div">
                 <div class="blog-actions-back">
                     <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
                 </div>

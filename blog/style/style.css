@@ -431,7 +431,7 @@ p.main-text{
 }
 
 .blog-actions-back {
-    margin-top: 3%;
+    margin: 0;
     flex-shrink: 0;
 }
 
@@ -440,6 +440,10 @@ p.main-text{
     flex: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+.blog-footer-div {
+    margin-top: 1.5%;
 }
 
 .buy-coffee-link {
