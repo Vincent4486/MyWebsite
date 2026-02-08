@@ -343,6 +343,7 @@ p.main-text{
     border-radius: 0.3%;
     transition: all 0.2s ease;
     background: rgba(0, 0, 233, 0.05);
+    white-space: nowrap;
 }
 
 .back-link:hover {
@@ -434,11 +435,11 @@ p.main-text{
 
 .blog-actions-back {
     margin: 0;
+    flex-shrink: 0;
 }
 
 .blog-actions-coffee {
     margin: 0;
-    text-align: right;
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -451,6 +452,7 @@ p.main-text{
     border-radius: 0.5%;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
 }
 
 .buy-coffee-link:hover {
