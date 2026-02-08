@@ -417,7 +417,6 @@ p.main-text{
 .blog-actions .buy-coffee-link {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
 .blog-actions .buy-coffee-link img {
