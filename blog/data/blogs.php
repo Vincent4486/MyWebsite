@@ -11,12 +11,6 @@
 
 return [
     [
-        'slug' => 'first-blog-post',
-        'date' => '2026-02-08',
-        'title' => 'My First Blog Post',
-        'excerpt' => 'This is my very first blog post. Welcome to my blog!'
-    ],
-    [
         'slug' => 'welcome-to-2026',
         'date' => '2026-02-01',
         'title' => 'Welcome to 2026',
