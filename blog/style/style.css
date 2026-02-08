@@ -302,8 +302,16 @@ p.main-text{
     border-bottom: 0.1% solid #e0e0e0;
 }
 
+.blog-header > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+    margin-bottom: 1.5%;
+}
+
 .blog-header h1 {
-    margin: 2% 0 1% 0;
+    margin: 0 0 1% 0;
     font-size: 400%;
     text-align: left;
     line-height: 1.2;
@@ -311,7 +319,7 @@ p.main-text{
 
 .blog-header .blog-date {
     font-size: 130%;
-    margin-top: 1.5%;
+    margin-top: 1%;
 }
 
 .back-link {
@@ -409,13 +417,21 @@ p.main-text{
     border-top: 0.1% solid #e0e0e0;
 }
 
+.blog-footer > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+}
+
 .blog-actions-back {
-    margin: 1% 0 2% 0;
+    margin: 0;
 }
 
 .blog-actions-coffee {
-    margin: 1% 0 2% 0;
+    margin: 0;
     text-align: right;
+    flex: 1;
 }
 
 .buy-coffee-link {
@@ -464,14 +480,20 @@ p.main-text{
         font-size: 300%;
     }
     
+    .blog-header > div:first-child,
+    .blog-footer > div:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .blog-actions-back,
     .blog-actions-coffee {
         text-align: center;
+        width: 100%;
     }
     
     .back-link,
     .buy-coffee-link {
-        width: 100%;
         justify-content: center;
     }
     

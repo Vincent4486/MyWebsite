@@ -74,11 +74,13 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
     <!-- Blog Post Content -->
     <article class="blog-post">
         <header class="blog-header">
-            <div class="blog-actions-back">
-                <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
-            </div>
-            <div class="blog-actions-coffee">
-                <a href="https://www.buymeacoffee.com/vincentyang" class="buy-coffee-link"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+            <div>
+                <div class="blog-actions-back">
+                    <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
+                </div>
+                <div class="blog-actions-coffee">
+                    <a href="https://www.buymeacoffee.com/vincentyang" class="buy-coffee-link"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+                </div>
             </div>
             <h1><?php echo htmlspecialchars($blogTitle); ?></h1>
             <time class="blog-date"><?php echo $formattedDate; ?></time>
@@ -113,11 +115,13 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
         </div>
         
         <footer class="blog-footer">
-            <div class="blog-actions-back">
-                <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
-            </div>
-            <div class="blog-actions-coffee">
-                <a href="https://www.buymeacoffee.com/vincentyang" class="buy-coffee-link"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+            <div>
+                <div class="blog-actions-back">
+                    <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
+                </div>
+                <div class="blog-actions-coffee">
+                    <a href="https://www.buymeacoffee.com/vincentyang" class="buy-coffee-link"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+                </div>
             </div>
         </footer>
     </article>
