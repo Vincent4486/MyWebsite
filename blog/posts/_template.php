@@ -68,7 +68,7 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
         <a href="https://music.vyang.org" class="nav-link" data-i18n="nav.music">Music</a>
         <a href="https://support.vyang.org" class="nav-link" data-i18n="nav.support">Support</a>
   </div>
-      
+
     <!-- Blog Post Content -->
     <article class="blog-post">
         <header class="blog-header">
@@ -111,6 +111,8 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
             <h2>Conclusion</h2>
             <p>Your closing thoughts...</p>
         </div>
+
+        <hr>
         
         <footer class="blog-footer">
             <div>

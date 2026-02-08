@@ -88,6 +88,8 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
             
             <p>Here's to a great year ahead!</p>
         </div>
+
+        <hr>
         
         <footer class="blog-footer">
             <div>
