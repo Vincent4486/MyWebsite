@@ -407,6 +407,8 @@ p.main-text{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
+    gap: 16px;
 }
 
 .blog-actions .back-link {
