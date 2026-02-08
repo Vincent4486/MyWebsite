@@ -293,22 +293,25 @@ p.main-text{
 .blog-post {
     max-width: 55%;
     margin: 0 auto;
-    padding: 2% 5%;
+    padding: 3% 5%;
 }
 
 .blog-header {
-    margin-bottom: 3%;
+    margin-bottom: 4%;
+    padding-bottom: 2%;
+    border-bottom: 0.1% solid #e0e0e0;
 }
 
 .blog-header h1 {
     margin: 2% 0 1% 0;
     font-size: 400%;
     text-align: left;
+    line-height: 1.2;
 }
 
 .blog-header .blog-date {
     font-size: 130%;
-    margin-top: 1%;
+    margin-top: 1.5%;
 }
 
 .back-link {
@@ -319,14 +322,19 @@ p.main-text{
     font-family: var(--main-font);
     color: rgba(0, 0, 233, 1);
     text-decoration: none;
-    padding: 0.5% 1%;
+    padding: 0.8% 1.5%;
     margin-bottom: 1%;
     box-shadow: 0 0.2% 0.5% rgba(0,0,0,0.18);
+    border-radius: 0.3%;
+    transition: all 0.2s ease;
+    background: rgba(0, 0, 233, 0.05);
 }
 
 .back-link:hover {
     background: rgba(0, 0, 233, 0.88);
+    color: white;
     box-shadow: 0 0.3% 0.7% rgba(0,0,0,0.22);
+    transform: translateY(-0.1%);
 }
 
 .blog-content {
@@ -396,9 +404,9 @@ p.main-text{
 }
 
 .blog-footer {
-    margin-top: 4%;
-    padding-top: 2%;
-    border-top: 0.1% solid #ddd;
+    margin-top: 5%;
+    padding-top: 3%;
+    border-top: 0.1% solid #e0e0e0;
 }
 
 .blog-actions {
@@ -408,6 +416,7 @@ p.main-text{
     margin: 2% 0;
     width: 100%;
     box-sizing: border-box;
+    gap: 2%;
 }
 
 .blog-actions .back-link {
@@ -415,10 +424,97 @@ p.main-text{
 }
 
 .blog-actions .buy-coffee-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    padding: 0.5% 1%;
+    border-radius: 0.5%;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.2% 0.5% rgba(0, 0, 0, 0.15);
+}
+
+.blog-actions .buy-coffee-link:hover {
+    transform: translateY(-0.2%);
+    box-shadow: 0 0.4% 0.8% rgba(0, 0, 0, 0.25);
 }
 
 .blog-actions .buy-coffee-link img {
     display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 1200px) {
+    .blog-post {
+        max-width: 70%;
+    }
+    
+    .blog-list {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        max-width: 90%;
+        padding: 5% 3%;
+    }
+    
+    .blog-list {
+        max-width: 90%;
+        padding: 5% 3%;
+    }
+    
+    .blog-header h1 {
+        font-size: 300%;
+    }
+    
+    .blog-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3%;
+    }
+    
+    .blog-actions .back-link,
+    .blog-actions .buy-coffee-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .blog-post-preview h2 {
+        font-size: 200%;
+    }
+    
+    .blog-content {
+        font-size: 120%;
+    }
+    
+    .blog-content h2 {
+        font-size: 180%;
+    }
+    
+    .blog-content h3 {
+        font-size: 140%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-header h1 {
+        font-size: 220%;
+    }
+    
+    .blog-post {
+        max-width: 95%;
+        padding: 5% 2%;
+    }
+    
+    .blog-list {
+        max-width: 95%;
+        padding: 5% 2%;
+    }
+    
+    h1 {
+        font-size: 500%;
+        margin-left: 5%;
+    }
 }
