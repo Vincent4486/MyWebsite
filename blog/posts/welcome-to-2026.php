@@ -1,7 +1,13 @@
 <?php
-// Blog post metadata
-$blogTitle = 'Welcome to 2026';
-$blogDate = '2026-02-01';
+$slug = 'welcome-to-2026';
+$blogs = include __DIR__ . '/../data/blogs.php';
+$blogMeta = null;
+foreach ($blogs as $b) {
+  if ($b['slug'] === $slug) { $blogMeta = $b; break; }
+}
+if (!$blogMeta) { $blogMeta = ['title' => 'Untitled Blog', 'date' => date('Y-m-d')]; }
+$blogTitle = $blogMeta['title'];
+$blogDate = $blogMeta['date'];
 $formattedDate = date('F j, Y', strtotime($blogDate));
 ?>
 <!DOCTYPE html>

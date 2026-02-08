@@ -1,7 +1,29 @@
 <?php
-// Blog post metadata
-$blogTitle = 'Your Blog Title Here';
-$blogDate = '2026-02-08'; // Format: YYYY-MM-DD
+// Infer slug from filename (e.g., posts/my-post.php => my-post)
+$slug = basename(__FILE__, '.php');
+
+// Load shared blog metadata
+$blogs = include __DIR__ . '/../data/blogs.php';
+
+// Find matching blog entry
+$blogMeta = null;
+foreach ($blogs as $b) {
+  if ($b['slug'] === $slug) {
+    $blogMeta = $b;
+    break;
+  }
+}
+
+// Fallback if not found
+if (!$blogMeta) {
+  $blogMeta = [
+    'title' => 'Untitled Blog',
+    'date' => date('Y-m-d'),
+  ];
+}
+
+$blogTitle = $blogMeta['title'];
+$blogDate = $blogMeta['date'];
 $formattedDate = date('F j, Y', strtotime($blogDate));
 ?>
 <!DOCTYPE html>

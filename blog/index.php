@@ -2,9 +2,6 @@
 // Load blog posts data
 $blogs = include __DIR__ . '/data/blogs.php';
 
-// Get current language from cookie or default to 'en-us'
-$currentLang = $_COOKIE['preferredLanguage'] ?? 'en-us';
-
 // Sort blogs by date (newest first)
 usort($blogs, function($a, $b) {
     return strtotime($b['date']) - strtotime($a['date']);
@@ -60,17 +57,16 @@ usort($blogs, function($a, $b) {
     <div class="blog-list">
         <?php foreach ($blogs as $blog): ?>
             <?php 
-                $translation = $blog['translations'][$currentLang] ?? $blog['translations']['en-us'];
                 $formattedDate = date('F j, Y', strtotime($blog['date']));
             ?>
             <article class="blog-post-preview">
                 <h2>
-                    <a href="/posts/<?php echo htmlspecialchars($blog['slug']); ?>.php">
-                        <?php echo htmlspecialchars($translation['title']); ?>
-                    </a>
+                <span class="blog-title">
+                    <?php echo htmlspecialchars($blog['title']); ?>
+                </span>
                 </h2>
                 <time class="blog-date"><?php echo $formattedDate; ?></time>
-                <p class="blog-excerpt"><?php echo htmlspecialchars($translation['excerpt']); ?></p>
+                <p class="blog-excerpt"><?php echo htmlspecialchars($blog['excerpt']); ?></p>
                 <a href="/posts/<?php echo htmlspecialchars($blog['slug']); ?>.php" class="read-more" data-i18n="blog.readMore">Read More →</a>
             </article>
         <?php endforeach; ?>

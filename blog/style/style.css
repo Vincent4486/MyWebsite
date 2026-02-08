@@ -253,14 +253,9 @@ p.main-text{
     font-weight: normal;
 }
 
-.blog-post-preview h2 a {
+.blog-post-preview h2 .blog-title {
     color: #000;
     text-decoration: none;
-}
-
-.blog-post-preview h2 a:hover {
-    color: rgb(0, 0, 233);
-    text-decoration: underline;
 }
 
 .blog-date {
@@ -316,16 +311,23 @@ p.main-text{
 }
 
 .back-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 120%;
     font-family: var(--main-font);
-    color: rgb(0, 0, 233);
+    color: white;
+    background: rgb(0, 0, 233);
     text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
     margin-bottom: 1%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
 }
 
 .back-link:hover {
-    text-decoration: underline;
+    background: rgba(0, 0, 233, 0.88);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22);
 }
 
 .blog-content {
