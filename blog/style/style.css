@@ -408,3 +408,16 @@ p.main-text{
     align-items: center;
     margin-bottom: 20px;
 }
+
+.blog-actions .back-link {
+    margin-bottom: 0;
+}
+
+.blog-actions .buy-coffee-link {
+    display: flex;
+    align-items: center;
+}
+
+.blog-actions .buy-coffee-link img {
+    display: block;
+}
