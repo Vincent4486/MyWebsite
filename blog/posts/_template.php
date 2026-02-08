@@ -111,10 +111,9 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
             <h2>Conclusion</h2>
             <p>Your closing thoughts...</p>
         </div>
-
-        <hr>
         
         <footer class="blog-footer">
+          <hr>
             <div>
                 <div class="blog-actions-back">
                     <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
