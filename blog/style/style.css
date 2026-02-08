@@ -14,8 +14,8 @@ body {
 
 /* --- Top language/navigation bar --- */
 .language-chooser {
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 0px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -29,7 +29,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5%;
-    z-index: 1000;
 }
 
 .nav-separator {
@@ -113,9 +112,9 @@ a.nav-link:visited { color: white; }
     background-color: white;
     border: none;
     border-radius: 0;
-    padding: 3px 0;
-    min-width: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    padding: 4px 0;
+    min-width: 8rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
     z-index: 10;
 }
 
@@ -126,7 +125,7 @@ a.nav-link:visited { color: white; }
 
 .dropdown-item {
     display: block;
-    padding: 0.4% 1%;
+    padding: 6px 12px;
     font-family: var(--main-font);
     font-size: 90%;
     color: black;
@@ -149,6 +148,7 @@ a.nav-link:visited { color: white; }
     border-radius: 0;
     font-family: var(--main-font);
     font-size: 170%;
+    position: sticky;
     text-align: center;
     margin-top: 5%;
 }
