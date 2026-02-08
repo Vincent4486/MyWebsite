@@ -75,6 +75,7 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
     <article class="blog-post">
         <header class="blog-header">
             <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
+            <a href="https://www.buymeacoffee.com/vincentyang"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
             <h1><?php echo htmlspecialchars($blogTitle); ?></h1>
             <time class="blog-date"><?php echo $formattedDate; ?></time>
         </header>
@@ -109,6 +110,7 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
         
         <footer class="blog-footer">
             <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
+            <a href="https://www.buymeacoffee.com/vincentyang"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=vincentyang&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
         </footer>
     </article>
 
