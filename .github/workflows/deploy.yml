@@ -14,5 +14,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/websites/www/
+            cd /var/websites/
             git pull origin main
