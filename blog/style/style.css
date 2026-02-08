@@ -431,7 +431,7 @@ p.main-text{
 }
 
 .blog-actions-back {
-    margin: 0;
+    margin-top: 3%;
     flex-shrink: 0;
 }
 
@@ -459,7 +459,8 @@ p.main-text{
 
 .buy-coffee-link img {
     display: block;
-    height: auto;
+    height: 50px;
+    width: auto;
     max-width: 100%;
 }
 
