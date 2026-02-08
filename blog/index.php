@@ -1,3 +1,15 @@
+<?php
+// Load blog posts data
+$blogs = include __DIR__ . '/data/blogs.php';
+
+// Get current language from cookie or default to 'en-us'
+$currentLang = $_COOKIE['preferredLanguage'] ?? 'en-us';
+
+// Sort blogs by date (newest first)
+usort($blogs, function($a, $b) {
+    return strtotime($b['date']) - strtotime($a['date']);
+});
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +48,7 @@
           </div>
         </div>
         <a href="https://www.vyang.org/contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
-        <a href="/index.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="/index.php" class="nav-link" data-i18n="nav.blog">Blog</a>
         <a href="https://music.vyang.org" class="nav-link" data-i18n="nav.music">Music</a>
         <a href="https://support.vyang.org" class="nav-link" data-i18n="nav.support">Support</a>
   </div>
@@ -44,9 +56,46 @@
     <br>
     <h1 data-i18n="blog.heading">Blogs</h1>
    
+    <!-- Blog Posts List -->
+    <div class="blog-list">
+        <?php foreach ($blogs as $blog): ?>
+            <?php 
+                $translation = $blog['translations'][$currentLang] ?? $blog['translations']['en-us'];
+                $formattedDate = date('F j, Y', strtotime($blog['date']));
+            ?>
+            <article class="blog-post-preview">
+                <h2>
+                    <a href="/posts/<?php echo htmlspecialchars($blog['slug']); ?>.php">
+                        <?php echo htmlspecialchars($translation['title']); ?>
+                    </a>
+                </h2>
+                <time class="blog-date"><?php echo $formattedDate; ?></time>
+                <p class="blog-excerpt"><?php echo htmlspecialchars($translation['excerpt']); ?></p>
+                <a href="/posts/<?php echo htmlspecialchars($blog['slug']); ?>.php" class="read-more" data-i18n="blog.readMore">Read More →</a>
+            </article>
+        <?php endforeach; ?>
+    </div>
+
     <div class="end_section">
         <p data-i18n="blog.footerQuote">The Blogs</p>
         <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Vincent Yang. All rights reserved.</p>
     </div>
+
+    <script>
+        // Store language preference in cookie when changed
+        function changeLanguage() {
+            var select = document.getElementById('language-select');
+            var selectedLang = select.value;
+            document.cookie = 'preferredLanguage=' + selectedLang + '; path=/; max-age=31536000';
+            
+            // Trigger the existing i18n language change
+            if (window.i18n && window.i18n.load) {
+                window.i18n.load(selectedLang);
+            }
+            
+            // Reload page to update PHP content
+            location.reload();
+        }
+    </script>
 </body>
 </html>

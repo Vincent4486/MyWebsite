@@ -20,6 +20,8 @@
   "blog": {
     "title": "Blog | English",
     "heading": "Blogs",
-    "footerQuote": "The Blogs"
+    "footerQuote": "The Blogs",
+    "readMore": "Read More →",
+    "backToList": "← Back to Blog List"
   }
 }

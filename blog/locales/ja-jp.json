@@ -20,6 +20,8 @@
   "blog": {
     "title": "ブログ | 日本語",
     "heading": "ブログ",
-    "footerQuote": "ブログ"
+    "footerQuote": "ブログ",
+    "readMore": "続きを読む →",
+    "backToList": "← ブログ一覧に戻る"
   }
 }

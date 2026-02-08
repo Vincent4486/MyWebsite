@@ -1,0 +1,12 @@
+# Enable PHP engine
+<IfModule mod_php7.c>
+    php_flag display_errors Off
+</IfModule>
+
+# Set index.php as the default directory index
+DirectoryIndex index.php index.html
+
+# Optional: Redirect index.html to index.php
+# Uncomment the lines below if you want old index.html links to redirect
+# RewriteEngine On
+# RewriteRule ^index\.html$ index.php [R=301,L]

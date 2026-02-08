@@ -20,6 +20,8 @@
   "blog": {
     "title": "博客 | 中文",
     "heading": "博客",
-    "footerQuote": "博客"
+    "footerQuote": "博客",
+    "readMore": "阅读更多 →",
+    "backToList": "← 返回博客列表"
   }
 }
