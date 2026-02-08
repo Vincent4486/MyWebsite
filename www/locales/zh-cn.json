@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "chooseLang": "选择语言：",
+    "home": "主页",
+    "welcome": "欢迎",
+    "contents": "目录",
+    "news": "新闻",
+    "about": "关于",
+    "aboutMe": "关于我",
+    "coding": "编程",
+    "mcArt": "我的世界艺术",
+    "contact": "联系",
+    "blog": "博客",
+    "music": "音乐",
+    "support": "支持"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. 保留所有权利。"
+  },
+  "index": {
+    "title": "欢迎来到我的网站 | 中文",
+    "hello": "你好，",
+    "introTitle": "我是 Vincent Yang，",
+    "introSubtitle": "又名 Vincent4486",
+    "introDesc": "这是一个关于我自己的网站。",
+    "contentsHeading": "目录：",
+    "clickFor": "点击下方：",
+    "aboutLink": "关于",
+    "contactLink": "联系",
+    "blogLink": "博客",
+    "musicLink": "音乐",
+    "newsHeading": "新闻：",
+    "footerQuote": "哆 来 咪 发 索 拉 西 ..."
+  },
+  "about": {
+    "title": "关于我 | 中文",
+    "heading": "关于我",
+    "mainText": "Vincent Yang（Vincent4486）是一名来自亚洲的学生，喜欢编程、音乐和摄影。他专注于C语言和Java开发的编程项目。他还喜欢写作，目前正在撰写他的第一部小说。同时，他也将音乐制作和摄影作为其他爱好。他在YouTube上制作有关音乐和编程的视频，并在这些爱好的旅程中不断学习。",
+    "linksDesc": "以下链接是他在不同爱好方面的作品。GitHub是他存储开源编程项目和对他人项目进行修改的地方。YouTube是他上传音乐作品的地方，也是他将上传编程教程的地方。JetPhotos是他上传航空摄影照片的地方。",
+    "programming": "编程：",
+    "music": "音乐：",
+    "photographing": "摄影：",
+    "worksDesc": "以下是我在不同爱好方面的作品页面，展示了我目前正在进行的项目和一些最终成果。您也可以通过上方的导航栏访问它们。",
+    "codingProjects": "编程项目",
+    "minecraftArts": "我的世界艺术",
+    "footerQuote": "名侦探柯南"
+  },
+  "contact": {
+    "title": "联系 | 中文",
+    "heading": "联系",
+    "mainText": "目前，联系我最方便的方式是通过电子邮件。如果您对我的作品或项目有具体问题，请使用该平台的联系页面，或通过电子邮件联系。",
+    "mainTextSmall": "关于在特定平台上联系我的方式，请参阅\"关于\"页面。",
+    "footerQuote": "B-32ED"
+  },
+  "coding": {
+    "title": "编程项目 | 中文",
+    "heading": "编程项目",
+    "mainText": "在这个页面中，有我目前正在进行或已完成的编程项目列表。希望它们对你有用，或者你能从中学到一些东西。谢谢！",
+    "mainTextSmall": "GitHub上的项目都是开源的，许可证包含在仓库中。只要遵守许可条款，您可以自由地在自己的项目中使用它们。<br><br>要下载项目，您可以从GitHub仓库下载<code>.zip</code>文件，或者如果您熟悉Git，可以使用<code>git clone</code>命令。",
+    "stateActive": "[活跃]",
+    "stateDone": "[已完成]",
+    "stateDeprecated": "[已弃用]",
+    "stateForked": "[复刻]",
+    "noDescription": "暂无描述。",
+    "githubRepo": "GitHub仓库",
+    "errorLoading": "加载项目失败。请稍后再试。",
+    "footerQuote": "C++ - 编程语言"
+  },
+  "mcArt": {
+    "title": "我的世界艺术 | 中文",
+    "heading": "我的世界<br>艺术",
+    "mainText": "这个页面展示我的Minecraft艺术作品。这些都是在120.buildersrefuge.com上制作的，希望你喜欢。",
+    "project2Title": "项目：2",
+    "project2Status": "制作中......",
+    "project1Title": "项目：1",
+    "project1Name": "花园小屋",
+    "project1Info": "2025年7月完成，这是我在这里发布的第一个项目。一个简单的房子和一座塔，配有一些农场和一个池塘。",
+    "footerQuote": "Wemmbu and Parrot UNSTABLE SMP!!!"
+  },
+  "books": {
+    "title": "书籍 | 中文",
+    "heading": "书籍",
+    "mainText": "此页面包含有关书籍的信息。",
+    "mainTextSmall": "目前还没有，因为我正在准备中。",
+    "footerQuote": "George is the best"
+  }
+}

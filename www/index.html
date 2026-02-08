@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Language Redirect</title>
-  <script>
-    (function() {
-      // Grab the first two letters of the browser’s primary language
-      var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
-
-      // Map language codes to their landing pages
-      var map = {
-        zh: '/zh-cn/index.html',
-        en: '/en-us/index.html',
-        ja: '/ja-jp/index.html'
-      };
-
-      // Redirect to mapped URL or fall back to English
-      window.location.replace(map[lang] || map.en);
-    })();
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/assets/icons/WebIcon.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/index.css">
+  <title data-i18n="index.title">Welcome to my website | English</title>
+  <script src="/script/i18n.js" defer></script>
 </head>
 <body>
-  <p>Detecting language… If you are not redirected, <a id="fallback" href="/en-us/start.html">click here</a>.</p>
-  <script>
-    // Update fallback link to match detected language
-    var a = document.getElementById('fallback');
-    var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
-    a.href = {
-      zh: '/zh-cn/start.html',
-      ja: '/ja-jp/start.html',
-      en: '/en-us/start.html'
-    }[lang] || '/en-us/start.html';
-  </script>
+  <!-- Language Chooser Section -->
+  <div class="language-chooser">
+        <label for="language-select" data-i18n="nav.chooseLang">Choose your language:</label>
+        <select id="language-select" onchange="changeLanguage()">
+        </select>
+        <span class="nav-separator">|</span>
+        <div class="dropdown">
+          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav.home">
+            Home
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="/index.html" class="dropdown-item" role="menuitem" data-i18n="nav.welcome">Welcome</a>
+            <a href="/index.html#contents" class="dropdown-item" role="menuitem" data-i18n="nav.contents">Contents</a>
+            <a href="/index.html#news" class="dropdown-item" role="menuitem" data-i18n="nav.news">News</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav.about">
+            About
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="/about.html" class="dropdown-item" role="menuitem" data-i18n="nav.aboutMe">About me</a>
+            <a href="/coding.html" class="dropdown-item" role="menuitem" data-i18n="nav.coding">Coding</a>
+            <a href="/mc_art.html" class="dropdown-item" role="menuitem" data-i18n="nav.mcArt">Minecraft Arts</a>
+          </div>
+        </div>
+        <a href="/contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        <a href="https://blog.vyang.org" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="https://music.vyang.org" class="nav-link" data-i18n="nav.music">Music</a>
+        <a href="https://support.vyang.org" class="nav-link" data-i18n="nav.support">Support</a>
+  </div>
+
+    <br>
+    <h1 data-i18n="index.hello">Hello,</h1>
+    <p class="intro-title" data-i18n="index.introTitle">I am Vincent Yang,</p>
+    <p class="intro-subtitle" data-i18n="index.introSubtitle">or Vincent4486</p>
+    <br>
+    <p class="intro-description" data-i18n="index.introDesc">This is a website of myself.</p>
+    <br><br><br>
+    <p class="contents-heading" id="contents" data-i18n="index.contentsHeading">Contents:</p>
+
+    <div class="content-element">
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="/about.html" data-i18n="index.aboutLink">About</a>
+
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="/contact.html" data-i18n="index.contactLink">Contact</a>
+
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="https://blog.vyang.org" data-i18n="index.blogLink">Blog</a>
+
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="https://music.vyang.org" data-i18n="index.musicLink">Music</a>
+    </div>
+
+    <br><br><br>
+
+    <p class="contents-heading" id="news" data-i18n="index.newsHeading">News:</p>
+
+    <div class="end_section">
+        <p data-i18n="index.footerQuote">Do Re Mi Fa Sol La Ti ...</p>
+        <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Vincent Yang. All rights reserved.</p>
+    </div>
 </body>
 </html>

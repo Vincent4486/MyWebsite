@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "chooseLang": "Choose your language:",
+    "home": "Home",
+    "welcome": "Welcome",
+    "contents": "Contents",
+    "news": "News",
+    "about": "About",
+    "aboutMe": "About me",
+    "coding": "Coding",
+    "mcArt": "Minecraft Arts",
+    "contact": "Contact",
+    "blog": "Blog",
+    "music": "Music",
+    "support": "Support"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. All rights reserved."
+  },
+  "music": {
+    "title": "Music | English",
+    "heading": "Music",
+    "footerQuote": "Music"
+  }
+}

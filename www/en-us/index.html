@@ -6,12 +6,13 @@
   <link rel="icon" type="image/png" href="/assets/icons/WebIcon.png">
   <link rel="stylesheet" href="/en-us/style/style.css">
   <link rel="stylesheet" href="/en-us/style/index.css">
-  <title>Welcome to my website | English</title>
+  <title data-i18n="index.title">Welcome to my website | English</title>
+  <script src="/script/i18n.js" defer></script>
 </head>
 <body>
   <!-- Language Chooser Section -->
   <div class="language-chooser">
-        <label for="language-select">Choose your language:</label>
+        <label for="language-select" data-i18n="nav.chooseLang">Choose your language:</label>
         <select id="language-select" onchange="changeLanguage()">
             <option value="en-us">English</option>
             <option value="zh-cn">中文</option>
@@ -19,62 +20,61 @@
         </select>
         <span class="nav-separator">|</span>
         <div class="dropdown">
-          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav.home">
             Home
           </button>
           <div class="dropdown-menu" role="menu">
-            <a href="/en-us/index.html" class="dropdown-item" role="menuitem">Welcome</a>
-            <a href="/en-us/index.html#contents" class="dropdown-item" role="menuitem">Contents</a>
-            <a href="/en-us/index.html#news" class="dropdown-item" role="menuitem">News</a>
+            <a href="/en-us/index.html" class="dropdown-item" role="menuitem" data-i18n="nav.welcome">Welcome</a>
+            <a href="/en-us/index.html#contents" class="dropdown-item" role="menuitem" data-i18n="nav.contents">Contents</a>
+            <a href="/en-us/index.html#news" class="dropdown-item" role="menuitem" data-i18n="nav.news">News</a>
           </div>
         </div>
         <div class="dropdown">
-          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <button class="nav-link dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav.about">
             About
           </button>
           <div class="dropdown-menu" role="menu">
-            <a href="/en-us/about.html" class="dropdown-item" role="menuitem">About me</a>
-            <a href="/en-us/coding.html" class="dropdown-item" role="menuitem">Coding</a>
-            <a href="/en-us/mc_art.html" class="dropdown-item" role="menuitem">Minecraft Arts</a>
+            <a href="/en-us/about.html" class="dropdown-item" role="menuitem" data-i18n="nav.aboutMe">About me</a>
+            <a href="/en-us/coding.html" class="dropdown-item" role="menuitem" data-i18n="nav.coding">Coding</a>
+            <a href="/en-us/mc_art.html" class="dropdown-item" role="menuitem" data-i18n="nav.mcArt">Minecraft Arts</a>
           </div>
         </div>
-        <a href="/en-us/contact.html" class="nav-link">Contact</a>
-        <a href="https://blog.vyang.org" class="nav-link">Blog</a>
-        <a href="https://music.vyang.org" class="nav-link">Music</a>
-        <a href="https://support.vyang.org" class="nav-link">Support</a>
+        <a href="/en-us/contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        <a href="https://blog.vyang.org" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="https://music.vyang.org" class="nav-link" data-i18n="nav.music">Music</a>
+        <a href="https://support.vyang.org" class="nav-link" data-i18n="nav.support">Support</a>
   </div>
 
-  <script src="/en-us/script/script.js"></script>
     <br>
-    <h1>Hello,</h1>
-    <p class="intro-title">I am Vincent Yang,</p>
-    <p class="intro-subtitle">or Vincent4486</p>
+    <h1 data-i18n="index.hello">Hello,</h1>
+    <p class="intro-title" data-i18n="index.introTitle">I am Vincent Yang,</p>
+    <p class="intro-subtitle" data-i18n="index.introSubtitle">or Vincent4486</p>
     <br>
-    <p class="intro-description">This is a website of myself.</p>
+    <p class="intro-description" data-i18n="index.introDesc">This is a website of myself.</p>
     <br><br><br>
-    <p class="contents-heading" id="contents">Contents:</p>
+    <p class="contents-heading" id="contents" data-i18n="index.contentsHeading">Contents:</p>
 
     <div class="content-element">
-      <p class="click_for">Click below for:</p>
-      <a class="link" href="/en-us/about.html">About</a>
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="/en-us/about.html" data-i18n="index.aboutLink">About</a>
 
-      <p class="click_for">Click below for:</p>
-      <a class="link" href="/en-us/contact.html">Contact</a>
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="/en-us/contact.html" data-i18n="index.contactLink">Contact</a>
 
-      <p class="click_for">Click below for:</p>
-      <a class="link" href="https://blog.vyang.org">Blog</a>
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="https://blog.vyang.org" data-i18n="index.blogLink">Blog</a>
 
-      <p class="click_for">Click below for:</p>
-      <a class="link" href="https://music.vyang.org">Music</a>
+      <p class="click_for" data-i18n="index.clickFor">Click below for:</p>
+      <a class="link" href="https://music.vyang.org" data-i18n="index.musicLink">Music</a>
     </div>
 
     <br><br><br>
 
-    <p class="contents-heading" id="news">News:</p>
+    <p class="contents-heading" id="news" data-i18n="index.newsHeading">News:</p>
 
     <div class="end_section">
-        <p>Do Re Mi Fa Sol La Ti ...</p>
-        <p class="copyright">&copy; 2026 Vincent Yang. All rights reserved.</p>
+        <p data-i18n="index.footerQuote">Do Re Mi Fa Sol La Ti ...</p>
+        <p class="copyright" data-i18n="footer.copyright">&copy; 2026 Vincent Yang. All rights reserved.</p>
     </div>
 </body>
 </html>

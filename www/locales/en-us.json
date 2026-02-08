@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "chooseLang": "Choose your language:",
+    "home": "Home",
+    "welcome": "Welcome",
+    "contents": "Contents",
+    "news": "News",
+    "about": "About",
+    "aboutMe": "About me",
+    "coding": "Coding",
+    "mcArt": "Minecraft Arts",
+    "contact": "Contact",
+    "blog": "Blog",
+    "music": "Music",
+    "support": "Support"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. All rights reserved."
+  },
+  "index": {
+    "title": "Welcome to my website | English",
+    "hello": "Hello,",
+    "introTitle": "I am Vincent Yang,",
+    "introSubtitle": "or Vincent4486",
+    "introDesc": "This is a website of myself.",
+    "contentsHeading": "Contents:",
+    "clickFor": "Click below for:",
+    "aboutLink": "About",
+    "contactLink": "Contact",
+    "blogLink": "Blog",
+    "musicLink": "Music",
+    "newsHeading": "News:",
+    "footerQuote": "Do Re Mi Fa Sol La Ti ..."
+  },
+  "about": {
+    "title": "About me | English",
+    "heading": "About me",
+    "mainText": "Vincent Yang, or Vincent4486 is a student from Asia who enjoys programing, music, and photographing. He is focused on programming projects with C development and Java development. He also enjoys writing, as he is currently writing his first fiction book. While also doing music production and photography as other hobbies. He also creates YouTube musics about music and programming, as he is still learning throughout the journey of these hobbies.",
+    "linksDesc": "This links below are for his works on his different hobbies. Github is the place he stores his open source programming projects and his modification to other projects people's projects. YouTube is where he uploads his music productions, and the place where he will upload tutorials about programming. And finally JetPhotos is where he will upload his photos of aviation he took.",
+    "programming": "Programing:",
+    "music": "Music:",
+    "photographing": "Photographing:",
+    "worksDesc": "Below are the specific pages for my works in different hobbies, showcasing the current projects I am working on and some final results on my projecs. You can also access them through the navigation bar above.",
+    "codingProjects": "Coding Projects",
+    "minecraftArts": "Minecraft Arts",
+    "footerQuote": "\u540d\u63a2\u5075\u30b3\u30ca\u30f3"
+  },
+  "contact": {
+    "title": "Contact | English",
+    "heading": "Contact",
+    "mainText": "Currently, the most useful way to contact me is through my email, and if you have specific problems regarding to my creations or projects, pleease use the contact page in that specific plaform, or via e-mail.",
+    "mainTextSmall": "For contacting me of specific platforms, please refer to the \"About\" page.",
+    "footerQuote": "B-32ED"
+  },
+  "coding": {
+    "title": "Coding Projects | English",
+    "heading": "Coding Projects",
+    "mainText": "In this page, there will be a list of programming projects that I am currently working on or finished projects. Hope that you found them useful or learnt something from them. Thank you!",
+    "mainTextSmall": "For projects on GitHub, all of them are open source, and the licence is included in the repository. You can freely use them in your own projects as long as you follow the licence terms.<br><br>To download the projects, you can either download the <code>.zip</code> file from the GitHub repository, or use <code>git clone</code> command if you are familiar with Git.",
+    "stateActive": "[ACTIVE]",
+    "stateDone": "[DONE]",
+    "stateDeprecated": "[DEPRECATED]",
+    "stateForked": "[FORKED]",
+    "noDescription": "No description available.",
+    "githubRepo": "GitHub Repository",
+    "errorLoading": "Error loading projects. Please try again later.",
+    "footerQuote": "C++ - the language"
+  },
+  "mcArt": {
+    "title": "My Minecraft arts | English",
+    "heading": "My Minecraft <br>Arts",
+    "mainText": "This is the page to show my Minecraft arts. I made these on 120.buildersrefuge.com and hope you enjoy.",
+    "project2Title": "Project: 2",
+    "project2Status": "On the way......",
+    "project1Title": "Project: 1",
+    "project1Name": "Garden House",
+    "project1Info": "Finished July 2025, this is my first project I posted here. A simple house and a tower with some farm and a pond.",
+    "footerQuote": "Wemmbu and Parrot UNSTABLE SMP!!!"
+  },
+  "books": {
+    "title": "Books | English",
+    "heading": "Books",
+    "mainText": "This page contains information about books.",
+    "mainTextSmall": "Currently there is none, because I am working on it.",
+    "footerQuote": "George is the best"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "chooseLang": "言語を選択：",
+    "home": "ホーム",
+    "welcome": "ようこそ",
+    "contents": "目次",
+    "news": "ニュース",
+    "about": "紹介",
+    "aboutMe": "自己紹介",
+    "coding": "プログラミング",
+    "mcArt": "マインクラフトアート",
+    "contact": "お問い合わせ",
+    "blog": "ブログ",
+    "music": "音楽",
+    "support": "サポート"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. All rights reserved."
+  },
+  "music": {
+    "title": "音楽 | 日本語",
+    "heading": "音楽",
+    "footerQuote": "音楽"
+  }
+}

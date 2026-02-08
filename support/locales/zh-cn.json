@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "chooseLang": "选择语言：",
+    "home": "主页",
+    "welcome": "欢迎",
+    "contents": "目录",
+    "news": "新闻",
+    "about": "关于",
+    "aboutMe": "关于我",
+    "coding": "编程",
+    "mcArt": "我的世界艺术",
+    "contact": "联系",
+    "blog": "博客",
+    "music": "音乐",
+    "support": "支持"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. 保留所有权利。"
+  },
+  "support": {
+    "title": "支持 | 中文",
+    "heading": "支持",
+    "footerQuote": "支持"
+  }
+}

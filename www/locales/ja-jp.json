@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "chooseLang": "言語を選択：",
+    "home": "ホーム",
+    "welcome": "ようこそ",
+    "contents": "目次",
+    "news": "ニュース",
+    "about": "紹介",
+    "aboutMe": "自己紹介",
+    "coding": "プログラミング",
+    "mcArt": "マインクラフトアート",
+    "contact": "お問い合わせ",
+    "blog": "ブログ",
+    "music": "音楽",
+    "support": "サポート"
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Vincent Yang. All rights reserved."
+  },
+  "index": {
+    "title": "ウェブサイトへようこそ | 日本語",
+    "hello": "こんにちは、",
+    "introTitle": "Vincent Yangです、",
+    "introSubtitle": "又はVincent4486",
+    "introDesc": "これは自分のウェブサイトです。",
+    "contentsHeading": "目次：",
+    "clickFor": "下をクリック：",
+    "aboutLink": "紹介",
+    "contactLink": "お問い合わせ",
+    "blogLink": "ブログ",
+    "musicLink": "音楽",
+    "newsHeading": "ニュース：",
+    "footerQuote": "ド レ ミ ファ ソ ラ シ ..."
+  },
+  "about": {
+    "title": "自己紹介 | 日本語",
+    "heading": "自己紹介",
+    "mainText": "Vincent Yang（Vincent4486）はアジア出身の学生で、プログラミング、音楽、写真撮影を楽しんでいます。C言語とJava開発のプログラミングプロジェクトに注力しています。また、現在初めてのフィクション小説を執筆中です。音楽制作や写真撮影も趣味として行っています。YouTubeでは音楽やプログラミングに関する動画を作成しており、これらの趣味を通じて日々学び続けています。",
+    "linksDesc": "以下のリンクは、さまざまな趣味における作品です。GitHubではオープンソースのプログラミングプロジェクトや他のプロジェクトへの貢献を公開しています。YouTubeでは音楽制作をアップロードし、プログラミングのチュートリアルも公開予定です。JetPhotosでは撮影した航空写真をアップロードしています。",
+    "programming": "プログラミング：",
+    "music": "音楽：",
+    "photographing": "写真撮影：",
+    "worksDesc": "以下は、さまざまな趣味の作品ページです。現在取り組んでいるプロジェクトや完成した作品をご覧いただけます。上部のナビゲーションバーからもアクセスできます。",
+    "codingProjects": "プログラミングプロジェクト",
+    "minecraftArts": "マインクラフトアート",
+    "footerQuote": "名探偵コナン"
+  },
+  "contact": {
+    "title": "お問い合わせ | 日本語",
+    "heading": "お問い合わせ",
+    "mainText": "現在、最も便利な連絡方法はメールです。作品やプロジェクトに関する具体的な問題がある場合は、そのプラットフォームのお問い合わせページ、またはメールをご利用ください。",
+    "mainTextSmall": "各プラットフォームでの連絡方法については、「紹介」ページをご参照ください。",
+    "footerQuote": "B-32ED"
+  },
+  "coding": {
+    "title": "プログラミングプロジェクト | 日本語",
+    "heading": "プログラミングプロジェクト",
+    "mainText": "このページには、現在取り組んでいるプログラミングプロジェクトや完成したプロジェクトの一覧があります。お役に立てたり、何か学んでいただければ幸いです。ありがとうございます！",
+    "mainTextSmall": "GitHubのプロジェクトはすべてオープンソースで、ライセンスはリポジトリに含まれています。ライセンス条項に従う限り、自由にご利用いただけます。<br><br>プロジェクトをダウンロードするには、GitHubリポジトリから<code>.zip</code>ファイルをダウンロードするか、Gitに慣れている方は<code>git clone</code>コマンドをご利用ください。",
+    "stateActive": "[アクティブ]",
+    "stateDone": "[完了]",
+    "stateDeprecated": "[非推奨]",
+    "stateForked": "[フォーク]",
+    "noDescription": "説明はありません。",
+    "githubRepo": "GitHubリポジトリ",
+    "errorLoading": "プロジェクトの読み込みに失敗しました。後でもう一度お試しください。",
+    "footerQuote": "C++ - 言語"
+  },
+  "mcArt": {
+    "title": "マインクラフトアート | 日本語",
+    "heading": "マインクラフト<br>アート",
+    "mainText": "このページでは、マインクラフトのアート作品を紹介しています。120.buildersrefuge.comで制作しました。お楽しみください。",
+    "project2Title": "プロジェクト：2",
+    "project2Status": "制作中......",
+    "project1Title": "プロジェクト：1",
+    "project1Name": "ガーデンハウス",
+    "project1Info": "2025年7月完成。ここに投稿した最初のプロジェクトです。農場と池のあるシンプルな家と塔です。",
+    "footerQuote": "Wemmbu and Parrot UNSTABLE SMP!!!"
+  },
+  "books": {
+    "title": "書籍 | 日本語",
+    "heading": "書籍",
+    "mainText": "このページには書籍に関する情報があります。",
+    "mainTextSmall": "現在準備中です。",
+    "footerQuote": "George is the best"
+  }
+}
