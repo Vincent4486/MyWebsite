@@ -149,9 +149,6 @@ a.nav-link:visited { color: white; }
     border-radius: 0;
     font-family: var(--main-font);
     font-size: 170%;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
     text-align: center;
     margin-top: 5%;
 }
