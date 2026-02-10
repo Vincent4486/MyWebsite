@@ -547,3 +547,76 @@ p.main-text{
         margin-left: 5%;
     }
 }
+
+/* --- Promotion & Subscription Additions --- */
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.newsletter-box {
+    background-color: rgba(0, 0, 233, 0.05); /* Soft blue matching your theme */
+    border: 1px solid rgba(0, 0, 233, 0.1);
+    padding: 30px;
+    margin: 50px 0;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.newsletter-box h3 {
+    margin-top: 0 !important;
+    font-size: 180% !important;
+    color: black;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ccc;
+    font-family: var(--main-font);
+    font-size: 110%;
+}
+
+.newsletter-form button {
+    background-color: rgb(0, 0, 233);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-family: var(--main-font);
+    font-size: 110%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #0000aa;
+}
+
+.support-banner {
+    text-align: center;
+    font-style: italic;
+    font-size: 120%;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/* Fix for mobile newsletter */
+@media screen and (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input[type="email"] {
+        width: 100%;
+    }
+}
