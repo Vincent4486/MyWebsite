@@ -296,6 +296,7 @@ p.main-text{
 .blog-post {
     max-width: 55%;
     margin: 0 auto;
+    margin-top: 2%;
     padding: 3% 5%;
 }
 
