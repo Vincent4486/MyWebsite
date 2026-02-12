@@ -74,9 +74,6 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
                 <div class="blog-actions-back">
                     <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
                 </div>
-                <div class="blog-actions-coffee">
-                    <a href="https://buymeacoffee.com/vincentyang" class="read-more" style="font-style: italic;">Support via Buy Me a Coffee →</a>
-                </div>
             </div>
             <h1><?php echo htmlspecialchars($blogTitle); ?></h1>
             <time class="blog-date"><?php echo $formattedDate; ?></time>
@@ -101,9 +98,6 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
             <div class="blog-footer-div">
                 <div class="blog-actions-back">
                     <a href="/index.php" class="back-link" data-i18n="blog.backToList">← Back to Blog List</a>
-                </div>
-                <div class="blog-actions-coffee">
-                    <a href="https://support.vyang.org" class="read-more" style="font-style: italic;">More ways to support →</a>
                 </div>
             </div>
         </footer>

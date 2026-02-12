@@ -16,11 +16,11 @@ return [
         'title' => 'Welcome to 2026',
         'excerpt' => 'A new year brings new opportunities and experiences.'
     ],
-    [
+    /*[
         'slug' => 'deployed-but-nothing-changed',
         'date' => '2026-02-12',
         'title' => 'Website Deployed but Nothing Changed',
         'excerpt' => 'Exploring the challenges of deployment without visible updates.'
-    ]
+    ],*/
     // Add more blog posts here
 ];
