@@ -1,6 +1,6 @@
 <?php
 // 1. Load Parsedown
-require_once __DIR__ . '/../../lib/Parsedown.php';
+require_once __DIR__ . '/../lib/Parsedown.php';
 $Parsedown = new Parsedown();
 
 // 2. Infer slug from filename
@@ -85,7 +85,7 @@ $formattedDate = date('F j, Y', strtotime($blogDate));
         <div class="blog-content">
             <?php
             // Look for the .md file in the data/posts folder
-            $mdFilePath = __DIR__ . "/../../data/posts/{$slug}.md";
+            $mdFilePath = __DIR__ . "/../data/posts/{$slug}.md";
 
             if (file_exists($mdFilePath)) {
                 $markdown = file_get_contents($mdFilePath);
