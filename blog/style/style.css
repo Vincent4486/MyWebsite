@@ -467,6 +467,45 @@ p.main-text{
     max-width: 100%;
 }
 
+/* Styling for Markdown elements within the blog content */
+
+.blog-content blockquote {
+    border-left: 3px solid rgb(0, 0, 233, 0.253);
+    margin: 2% 0;
+    padding-left: 3%;
+    font-style: italic;
+    color: #555;
+}
+
+/* Ensure horizontal rules match your site's separators */
+.blog-content hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 4% 0;
+}
+
+/* Support Section Typography (the Big CTA) */
+.blog-content h4 {
+    font-size: 150%;
+    margin: 3% 0 1% 0;
+    font-weight: normal;
+    color: #000;
+}
+
+/* Ensure images from Markdown stay within bounds */
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2% auto;
+}
+
+/* Making bold text slightly more pronounced in Times New Roman */
+.blog-content strong {
+    font-weight: bold;
+    color: #111;
+}
+
 /* --- Responsive Design --- */
 @media screen and (max-width: 1200px) {
     .blog-post {
