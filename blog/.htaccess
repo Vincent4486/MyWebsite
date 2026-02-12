@@ -10,3 +10,9 @@ DirectoryIndex index.php index.html
 # Uncomment the lines below if you want old index.html links to redirect
 # RewriteEngine On
 # RewriteRule ^index\.html$ index.php [R=301,L]
+
+# Prevent direct access to sensitive data directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^data/ - [F,L]
+</IfModule>
