@@ -1,5 +1,3 @@
-# Your websites deployed but nothing changed on the client side
-
 ## Introduction
 If you have built a website, you have likely encountered the specific frustration of deploying to the global network: you update a CSS style or patch a JavaScript bug, but the production site stubbornly serves the old version. Only your users see the "broken" state. This is especially painful during emergency hotfixes or when debugging environment-specific issues on platforms like PHP.
 
