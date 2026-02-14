@@ -434,7 +434,7 @@ p.main-text{
     flex-shrink: 0;
 }
 
-.blog-actions-coffee {
+.blog-actions-support {
     margin: 0;
     flex: 1;
     display: flex;
@@ -519,70 +519,105 @@ p.main-text{
 
 @media screen and (max-width: 768px) {
     .blog-post {
-        max-width: 90%;
-        padding: 5% 3%;
+        max-width: 92%;
+        padding: 6% 4%;
     }
-    
+
     .blog-list {
-        max-width: 90%;
-        padding: 5% 3%;
+        max-width: 92%;
+        padding: 6% 4%;
     }
-    
+
     .blog-header h1 {
-        font-size: 300%;
+        font-size: 280%;
     }
-    
+
     .blog-header > div:first-child,
     .blog-footer > div:first-child {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .blog-actions-back,
-    .blog-actions-coffee {
+    .blog-actions-support {
         text-align: center;
         width: 100%;
     }
-    
+
     .back-link,
     .buy-coffee-link {
         justify-content: center;
     }
-    
+
     .blog-post-preview h2 {
-        font-size: 200%;
+        font-size: 190%;
     }
-    
+
     .blog-content {
-        font-size: 120%;
+        font-size: 130%;
+        line-height: 1.9;
     }
-    
+
     .blog-content h2 {
-        font-size: 180%;
+        font-size: 170%;
     }
-    
+
     .blog-content h3 {
-        font-size: 140%;
+        font-size: 150%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .blog-header h1 {
-        font-size: 220%;
+        font-size: 240%;
     }
-    
+
     .blog-post {
-        max-width: 95%;
-        padding: 5% 2%;
+        max-width: 100%;
+        padding: 8% 4%;
     }
-    
+
     .blog-list {
-        max-width: 95%;
-        padding: 5% 2%;
+        max-width: 100%;
+        padding: 8% 4%;
     }
-    
+
     h1 {
-        font-size: 500%;
+        font-size: 520%;
         margin-left: 5%;
+    }
+
+    /* Increase touch target size for navigation links */
+    .language-chooser a,
+    .nav-separator,
+    .back-link,
+    .read-more,
+    .buy-coffee-link {
+        padding: 0.8rem 0.5rem;
+        font-size: 110%;
+    }
+
+    /* Make dropdown items easier to tap */
+    .dropdown-menu {
+        min-width: 10rem;
+    }
+
+    .dropdown-item {
+        padding: 0.8rem 1rem;
+        font-size: 105%;
+    }
+
+    /* Stack language chooser items vertically for better readability */
+    .language-chooser {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+        padding: 2% 0;
+    }
+
+    .language-chooser a,
+    .language-chooser .dropdown-toggle {
+        text-align: center;
+        width: 100%;
     }
 }
