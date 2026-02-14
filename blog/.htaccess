@@ -11,8 +11,10 @@ DirectoryIndex index.php index.html
 # RewriteEngine On
 # RewriteRule ^index\.html$ index.php [R=301,L]
 
-# Prevent direct access to sensitive data directory
+# Prevent any HTTP requests to the /data directory
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule ^data/ - [F,L]
+    # Deny all requests that start with /data/
+    # Block requests to /data and any subpath
+    RewriteRule ^data($|/) - [F,L]
 </IfModule>
